@@ -1,2 +1,8 @@
 # mobile-net-projects
-This repository is a demonstration of how to deploy state of the art deep learning model MobileNet in a Google Chrome browser using TensorFlow.js
+This repository contains projects that I worked using TensorFlow.js and Keras.
+
+1. Classify images using Keras MobileNet in Google Chrome using TensorFlow.js
+**Tools used**: Keras, TensorFlow.js
+**Tutorial**: [Classify images using Keras MobileNet in Google Chrome using TensorFlow.js](https://gogul09.github.io/software/mobile-net-tensorflow-js){:target="_blank"}
+
+![alt text](https://github.com/Gogul09/mobile-net-projects/blob/master/assets/out.gif)
