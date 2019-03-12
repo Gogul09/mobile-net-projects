@@ -6,7 +6,7 @@ async function loadModel() {
 	loader.style.display = "block";
 	modelName = "mobilenet";
 	model = undefined;
-	model = await tf.loadModel('https://gogul09.github.io/models/mobilenet/model.json');
+	model = await tf.loadLayersModel('https://gogul09.github.io/models/mobilenet/model.json');
 	loader.style.display = "none";
 	load_button.disabled = true;
 	load_button.innerHTML = "Loaded Model";
@@ -65,7 +65,7 @@ $("#predict-button").click(async function () {
 });
 
 function preprocessImage(image, modelName) {
-	let tensor = tf.fromPixels(image)
+	let tensor = tf.browser.fromPixels(image)
 		.resizeNearestNeighbor([224, 224])
 		.toFloat();
 
